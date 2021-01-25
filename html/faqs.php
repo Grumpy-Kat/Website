@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<?php include "../includes/head.html"; ?>
+		<?php include "/includes/head.html"; ?>
 		<link rel="stylesheet" href="../styles/faqs.css">
 	</head>
 	<body>
-		<?php include "../includes/navbar.php" ?>
+		<?php include "/includes/navbar.php" ?>
 		<!--main FAQs section-->
 		<div class="container-fluid accordion faqsSection">
 			<?php
@@ -74,6 +74,6 @@
 				}
 			);
 		</script>
-		<?php include "../includes/footer.php" ?>
+		<?php include "/includes/footer.php" ?>
 	</body>
 </html>

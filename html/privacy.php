@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<?php include "../includes/head.html"; ?>
+		<?php include "/includes/head.html"; ?>
 		<link rel="stylesheet" href="../styles/legal.css">
 	</head>
 	<body>
-		<?php include "../includes/navbar.php" ?>
+		<?php include "/includes/navbar.php" ?>
 		<div>
 			<ol class="olLevel0">
 				<h2 class="title">Privacy Policy</h2>
@@ -191,6 +191,6 @@
 					<p>By visiting this page on our website: <a href="contact?type=feature">https://technegames.com/contact</a>.</p>
 			</ol>
 		</div>
-		<?php include "../includes/footer.php" ?>
+		<?php include "/includes/footer.php" ?>
 	</body>
 </html>
