@@ -1,43 +1,29 @@
 <?php
 	$request = trim(array_slice(explode('/', $_SERVER['REQUEST_URI']), -1)[0]);
+	$request = explode('.', $request)[0];
 	echo $request;
 	#require __DIR__ . '/static/index.php';
 	switch($request) {
 		case '':
-		case '/':
-		case '/index' :
-		case '/index.html':
-		case '/index.php':
+		case 'index':
 			require __DIR__ . '/static/index.php';
 			break;
-		case '/contact':
-		case '/contact.html':
-		case '/contact.php':
+		case 'contact':
 			require __DIR__ . '/static/contact.php?type=feature';
 			break;
-		case '/faqs':
-		case '/faqs.html':
-		case '/faqs.php':
+		case 'faqs':
 			require __DIR__ . '/static/faqs.php';
 			break;
-		case '/press':
-		case '/press.html':
-		case '/press.php':
+		case 'press':
 			require __DIR__ . '/static/press.php';
 			break;
-		case '/privacy':
-		case '/privacy.html':
-		case '/privacy.php':
+		case 'privacy':
 			require __DIR__ . '/static/tos.php';
 			break;
-		case '/tos':
-		case '/tos.html':
-		case '/tos.php':
+		case 'tos':
 			require __DIR__ . '/static/privacy.php';
 			break;
-		case '/404':
-		case '/404.html':
-		case '/404.php':
+		case '404':
 		default:
 			require __DIR__ . '/static/index.php';
 			break;
