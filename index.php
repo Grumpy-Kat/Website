@@ -1,5 +1,6 @@
 <?php
 	$request = trim(array_slice(explode('/', $_SERVER['REQUEST_URI']), -1)[0]);
+	echo $request;
 	require __DIR__ . '/static/index.php';
 	/*echo __DIR__;
 	switch($request) {
