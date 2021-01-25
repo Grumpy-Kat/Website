@@ -1,0 +1,10 @@
+.olLevel0 {
+	padding-inline-start: 0px;
+	margin: 120px var(--marginHorizontal) 40px var(--marginHorizontal);
+}
+.olLevel1 {
+	list-style-type: upper-alpha;
+}
+.olLevel2 {
+	list-style-type: lower-roman;
+}

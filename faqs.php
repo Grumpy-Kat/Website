@@ -36,9 +36,6 @@
 					"Is GlamKit available in other languages?" =>
 					"<p>Yes, its available in English and Russian. We're currently working on a few more langauges, such as Spanish.</p>",
 					
-					"Where is my data stored?" =>
-					"Your data is stored on your device. It is completely private to you. We never sell or share our customers' data with advertisers or other third parties.",
-					
 					"Can I get my GlamKit data onto my new phone?" =>
 					"We're currently working on some backup methods, such as iCloud. Hopefully we can get that in an update soon.",
 					
