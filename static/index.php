@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<?php require __DIR__ . "/includes/head.html"; ?>
+		<?php include __DIR__ . "/includes/head.html"; ?>
 		<link rel="stylesheet" href="/styles/headerSection.css">
 		<link rel="stylesheet" href="/styles/screenSections.css">
 	</head>
