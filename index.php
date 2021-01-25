@@ -1,7 +1,7 @@
 <?php
 	$request = trim(array_slice(explode('/', $_SERVER['REQUEST_URI']), -1)[0]);
 	$request = explode('.', $request)[0];
-	echo $request;
+	#echo $request;
 	#require __DIR__ . '/static/index.php';
 	switch($request) {
 		case '':

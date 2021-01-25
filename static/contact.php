@@ -47,7 +47,7 @@
 				}
 			}
 		?>
-		<?php include "../includes/navbar.php"; ?>
+		<?php include "/../includes/navbar.php"; ?>
 		<!--main contact form-->
 		<form class="container-fluid contactForm" method="POST" action="<?php $_SERVER['PHP_SELF']; ?>">
 			<h2>Contact</h2>
