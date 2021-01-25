@@ -18,14 +18,14 @@
 			require __DIR__ . '/static/press.php';
 			break;
 		case 'privacy':
-			require __DIR__ . '/static/tos.php';
+			require __DIR__ . '/static/privacy.php';
 			break;
 		case 'tos':
-			require __DIR__ . '/static/privacy.php';
+			require __DIR__ . '/static/tos.php';
 			break;
 		case '404':
 		default:
-			require __DIR__ . '/static/index.php';
+			require __DIR__ . '/static/404.php';
 			break;
 	}
 ?>

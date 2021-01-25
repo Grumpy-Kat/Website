@@ -11,7 +11,7 @@
 	<div class="collapse navbar-collapse" id="navbar">
 		<ul class="nav navbar-nav navbar-right">
 			<li class="nav-item nav-link active home"><a href="/">Home</a></li>
-			<li class="nav-item nav-link contact"><a href="contact?type=feature">Contact</a></li>
+			<li class="nav-item nav-link contact"><a href="contact.php?type=feature">Contact</a></li>
 			<li class="nav-item nav-link instagram"><a href="faqs">FAQs</a></li>
 			<li class="nav-item nav-link press"><a href="press">Press Kit</a></li>
 		</ul>
