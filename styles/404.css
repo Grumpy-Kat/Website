@@ -1,4 +1,5 @@
 .error {
 	padding: 0px;
 	margin: 120px var(--marginHorizontal) 40px var(--marginHorizontal);
+	min-height: 500px;
 }
