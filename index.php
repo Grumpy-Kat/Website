@@ -9,7 +9,7 @@
 			require __DIR__ . '/static/index.php';
 			break;
 		case 'contact':
-			require __DIR__ . '/static/contact.php?type=feature';
+			require __DIR__ . '/static/contact.php';
 			break;
 		case 'faqs':
 			require __DIR__ . '/static/faqs.php';
