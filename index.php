@@ -41,6 +41,9 @@
 		case '/tos.php':
 			require __DIR__ . '/static/privacy.php';
 			break;
+		case '/404':
+		case '/404.html':
+		case '/404.php':
 		default:
 			require __DIR__ . '/static/index.php';
 			break;
