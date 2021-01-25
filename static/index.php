@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<?php echo __DIR__; ?>
 		<?php include __DIR__ . "/../includes/head.html"; ?>
 		<link rel="stylesheet" href="/styles/headerSection.css">
 		<link rel="stylesheet" href="/styles/screenSections.css">
@@ -212,6 +211,6 @@
 				}
 			);
 		</script>
-		<?php include "/includes/footer.php" ?>
+		<?php include __DIR__ . "/../includes/footer.php" ?>
 	</body>
 </html>

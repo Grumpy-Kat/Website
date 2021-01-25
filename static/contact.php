@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<?php include "/includes/head.html"; ?>
+		<?php include __DIR__ . "/../includes/head.html"; ?>
 		<link rel="stylesheet" href="/styles/contact.css">
 	</head>
 	<body>
@@ -110,6 +110,6 @@
 				}
 			);
 		</script>
-		<?php include "/includes/footer.php" ?>
+		<?php include __DIR__ . "/../includes/footer.php" ?>
 	</body>
 </html>
