@@ -3,3 +3,6 @@
 	margin: 160px var(--marginHorizontal) 40px var(--marginHorizontal);
 	min-height: 400px;
 }
+.error a, .error h3 {
+	font: var(--textPrimary);
+}
