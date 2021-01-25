@@ -7,7 +7,8 @@
 	<body>
 		<?php include __DIR__ . "/../includes/navbar.php"; ?>
 		<div class="error">
-			<h2>An error occurred!</h2>
+			<h2>404 Error!</h2>
+			<h3>Oops! Page not found! <a href="/">Return home?</a></h3> 
 		</div>
 		<?php include __DIR__ . "/../includes/footer.php" ?>
 	</body>
