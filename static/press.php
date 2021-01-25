@@ -14,11 +14,11 @@
 			<p>Release Date: Winter 2021</p>
 			<p>Platforms: <a href="#">iOS App Store</a> and <a href="#">Google Play Store</a></p>
 			<p>Price: Free</p>
-			<p>Website: <a href="#">technegames.com</a></p>
+			<p>Website: <a href="/">technegames.com</a></p>
 			<p>Instagram: <a href="#">TechneGames</a></p>
 			<p>Twitter: <a href="#">TechneGames</a></p>
 			<p>Contact: <a href="contact.php?type=press">technegames.com/contact</a></p>
-			<p>FAQs: <a href="faqs.php">technegames.com/faqs</a></p>
+			<p>FAQs: <a href="faqs">technegames.com/faqs</a></p>
 		</div>
 		<!--description section-->
 		<div class="container-fluid pressSection descriptionSection">
@@ -63,7 +63,7 @@
 		<!--screenshots images section-->
 		<div class="container-fluid pressSection imgsSection">
 			<h3>Images</h3>
-			<p class="download"><a href="downloads/screenshots.zip" download="Screenshots">Download All Screenshots (.zip)</a></p>
+			<p class="download"><a href="/downloads/screenshots.zip" download="Screenshots">Download All Screenshots (.zip)</a></p>
 			<div id="imgsCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
 				<div class="carousel-inner row">
 					<div class="item col-xs-3 active">
@@ -206,7 +206,7 @@
 		<div class="container-fluid pressSection graphicsSection">
 			<h3>Graphics</h3>
 			<p><a href="https://fonts.google.com/specimen/Montserrat" target="_blank">Download "Montserrat" Font Here</a></p>
-			<p class="download"><a href="downloads/graphics.zip" download="graphics">Download All Graphics</a></p>
+			<p class="download"><a href="/downloads/graphics.zip" download="graphics">Download All Graphics</a></p>
 			<div class="container-fluid row">
 				<div class="graphicsLogo col-xs-2">
 					<img class="img-fluid mx-auto d-block" src="imgs/iconIOS.png" alt="icon IOS">

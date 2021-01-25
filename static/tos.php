@@ -13,8 +13,8 @@
 				
 				<li><p><b><u>Introduction</u></b></p></li>
 					<p>Welcome to <b>TechneGames</b> ("<b>Company</b>", "<b>we</b>", "<b>our</b>", "<b>us</b>".) As you have just clicked our Terms of Service, please pause, grab a cup of coffee and carefully read the following pages. It will take you approximately 20 minutes.</p>
-					<p>These Terms of Service ("<b>Terms</b>", "<b>Terms of Service</b>") govern your use of our web pages located at <a href="index.php">https://technegames.com</a> and our mobile application GlamKit (together or individually "<b>Service</b>") operated by TechneGames.</p>
-					<p>Our Privacy Policy also governs your use of our Service and explains how we collect, safeguard, and disclose information that results from your use of our web pages. Please read it here <a href="privacy.php">https://technegames.com/privacy</a>.</p>
+					<p>These Terms of Service ("<b>Terms</b>", "<b>Terms of Service</b>") govern your use of our web pages located at <a href="/">https://technegames.com</a> and our mobile application GlamKit (together or individually "<b>Service</b>") operated by TechneGames.</p>
+					<p>Our Privacy Policy also governs your use of our Service and explains how we collect, safeguard, and disclose information that results from your use of our web pages. Please read it here <a href="privacy">https://technegames.com/privacy</a>.</p>
 					<p>Your agreement with us includes these Terms and our Privacy Policy ("<b>Agreements</b>"). You acknowledge that you have read and understood Agreements, and agree to be bound of them.</p>
 					<p>If you do not agree with (or cannot comply with) Agreements, then you may not use the Service, but please let us know by emailing at customerservice@technegames.com so we can try to find a solution. These Terms apply to all visitors, users, and others who wish to access or use Service.</p>
 					<p>Thank you for being responsible.</p>
@@ -143,7 +143,7 @@
 				<li><p><b><u>Contact Us</u></b></p></li>
 					<p>Please send your feedback, comments, requests for technical support, etc:</p>
 					<p>By email: customerservice@technegames.com.</p>
-					<p>By visiting this page on our website: <a href="contact?type=feature">https://technegames.com/contact</a>.</p>
+					<p>By visiting this page on our website: <a href="contact.php?type=feature">https://technegames.com/contact</a>.</p>
 			</ol>
 		</div>
 		<?php include __DIR__ . "/../includes/footer.php" ?>
