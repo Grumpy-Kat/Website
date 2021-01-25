@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<?php include "includes/head.html"; ?>
-		<link rel="stylesheet" href="styles/contact.css">
+		<?php include "../includes/head.html"; ?>
+		<link rel="stylesheet" href="../styles/contact.css">
 	</head>
 	<body>
 		<?php
@@ -47,7 +47,7 @@
 				}
 			}
 		?>
-		<?php include "includes/navbar.php"; ?>
+		<?php include "../includes/navbar.php"; ?>
 		<!--main contact form-->
 		<form class="container-fluid contactForm" method="POST" action="<?php $_SERVER['PHP_SELF']; ?>">
 			<h2>Contact</h2>
@@ -110,6 +110,6 @@
 				}
 			);
 		</script>
-		<?php include "includes/footer.php" ?>
+		<?php include "../includes/footer.php" ?>
 	</body>
 </html>

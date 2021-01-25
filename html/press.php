@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<?php include "includes/head.html"; ?>
-		<link rel="stylesheet" href="styles/press.css">
+		<?php include "../includes/head.html"; ?>
+		<link rel="stylesheet" href="../styles/press.css">
 	</head>
 	<body>
-		<?php include "includes/navbar.php" ?>
+		<?php include "../includes/navbar.php" ?>
 		<h2 class="title">GlamKit Press Kit</h2>
 		<!--basic facts section-->
 		<div class="container-fluid pressSection infoSection">
@@ -228,6 +228,6 @@
 				</div>
 			</div>
 		</div>
-		<?php include "includes/footer.php" ?>
+		<?php include "../includes/footer.php" ?>
 	</body>
 </html>

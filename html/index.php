@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<?php include "includes/head.html"; ?>
-		<link rel="stylesheet" href="styles/headerSection.css">
-		<link rel="stylesheet" href="styles/screenSections.css">
+		<?php include "../includes/head.html"; ?>
+		<link rel="stylesheet" href="../styles/headerSection.css">
+		<link rel="stylesheet" href="../styles/screenSections.css">
 	</head>
 	<body>
-		<?php include "includes/navbar.php" ?>
+		<?php include "../includes/navbar.php" ?>
 		<!--first section-->
 		<div class="container-fluid row headerSection">
 			<div class="col-md-6">
@@ -211,6 +211,6 @@
 				}
 			);
 		</script>
-		<?php include "includes/footer.php" ?>
+		<?php include "../includes/footer.php" ?>
 	</body>
 </html>
