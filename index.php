@@ -1,6 +1,7 @@
 <?php
 	$request = trim(array_slice(explode('/', $_SERVER['REQUEST_URI']), -1)[0]);
-	echo __DIR__;
+	require __DIR__ . '/static/index.php';
+	/*echo __DIR__;
 	switch($request) {
 		case '':
 		case '/':
@@ -42,5 +43,5 @@
 		default:
 			require __DIR__ . '/static/index.php';
 			break;
-	}
+	}*/
 ?>
