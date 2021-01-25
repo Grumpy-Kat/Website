@@ -1,19 +1,13 @@
 <?php
 	$request = trim(array_slice(explode('/', $_SERVER['REQUEST_URI']), -1)[0]);
 	echo $request;
-	require __DIR__ . '/static/index.php';
-	/*echo __DIR__;
+	#require __DIR__ . '/static/index.php';
 	switch($request) {
 		case '':
 		case '/':
 		case '/index' :
 		case '/index.html':
 		case '/index.php':
-		case 'app':
-		case '/app/':
-		case '/app/index' :
-		case '/app/index.html':
-		case '/app/index.php':
 			require __DIR__ . '/static/index.php';
 			break;
 		case '/contact':
@@ -47,5 +41,5 @@
 		default:
 			require __DIR__ . '/static/index.php';
 			break;
-	}*/
+	}
 ?>
