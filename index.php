@@ -3,7 +3,7 @@
 	echo $request;
 	switch($request) {
 		case '':
-			require '../html/index.php';
+			require '/html/index.php';
 			break;
 		case '/contact':
 		case '/contact.html':
@@ -32,7 +32,7 @@
 			break;
 		default:
 			http_response_code(404);
-			require '../html/404.php';
+			require '/html/404.php';
 			break;
 	}
 ?>
