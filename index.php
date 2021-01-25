@@ -3,10 +3,6 @@
 	echo $request;
 	switch($request) {
 		case '':
-		case '/':
-		case '/index' :
-		case '/index.html':
-		case '/index.php':
 			require __DIR__ . '/html/index.php';
 			break;
 		case '/contact':
@@ -34,9 +30,9 @@
 		case '/tos.php':
 			require __DIR__ . '/html/privacy.php';
 			break;
-		default:
-			http_response_code(404);
-			require __DIR__ . '/html/404.php';
-			break;
+		#default:
+		#	http_response_code(404);
+		#	require __DIR__ . '/html/404.php';
+		#	break;
 	}
 ?>
