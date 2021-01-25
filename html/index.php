@@ -2,8 +2,8 @@
 <html lang="en-US">
 	<head>
 		<?php include "/includes/head.html"; ?>
-		<link rel="stylesheet" href="../styles/headerSection.css">
-		<link rel="stylesheet" href="../styles/screenSections.css">
+		<link rel="stylesheet" href="/styles/headerSection.css">
+		<link rel="stylesheet" href="/styles/screenSections.css">
 	</head>
 	<body>
 		<?php include "/includes/navbar.php" ?>

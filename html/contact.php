@@ -2,7 +2,7 @@
 <html lang="en-US">
 	<head>
 		<?php include "/includes/head.html"; ?>
-		<link rel="stylesheet" href="../styles/contact.css">
+		<link rel="stylesheet" href="/styles/contact.css">
 	</head>
 	<body>
 		<?php

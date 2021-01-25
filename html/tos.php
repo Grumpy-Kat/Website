@@ -2,7 +2,7 @@
 <html lang="en-US">
 	<head>
 		<?php include "/includes/head.html"; ?>
-		<link rel="stylesheet" href="../styles/legal.css">
+		<link rel="stylesheet" href="/styles/legal.css">
 	</head>
 	<body>
 		<?php include "/includes/navbar.php" ?>
