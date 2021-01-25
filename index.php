@@ -1,6 +1,6 @@
 <?php
 	$request = trim(array_slice(explode('/', $_SERVER['REQUEST_URI']), -1)[0]);
-	var $redirect = '';
+	$redirect = '';
 	switch($request) {
 		case '':
 		case '/':
