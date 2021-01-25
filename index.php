@@ -35,10 +35,9 @@
 			$redirect = __DIR__ . '/html/privacy.php';
 			break;
 		default:
-			http_response_code(404);
-			require __DIR__ . '/html/404.php';
+			$redirect = __DIR__ . '/html/404.php';
 			break;
 	}
+	echo $redirect;
 	header('Location: ' . $redirect, true, 301);
-	die();	
 ?>
