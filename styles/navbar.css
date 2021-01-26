@@ -148,29 +148,10 @@
 		margin-left: 45px!important;
 	}
 	.navbar-toggler-icon {
-		width: 24px;
-		height: 24px;
+		width: 25px;
+		height: 25px;
 		margin: 0px 0px!important;
 	}
-/*.navbar-brand {
-	background-size: 70px 70px;
-	width: 47px;
-	height: 47px;
-    margin: 13px 0px;
-    padding: 15px 0px;
-}
-.navbar-brand-background {
-	background-size: 47px 47px;
-}
-.navbar-brand-title {
-	margin: 20px 0px;
-	margin-left: 55px!important;
-	padding: 0px;
-	width: 100px;
-	height: 47px;
-	font: var(--title);
-	font-size: 27px;
-}*/
 }
 @media (max-width: 790px) {
     .navbar-header {
