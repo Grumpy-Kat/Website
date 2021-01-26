@@ -193,7 +193,7 @@
 }
 @media (max-width: 450px) {
 	.mailingListForm {
-		margin: 30px 15px;
+		margin: 30px 20px;
 	}
 	.mailingListForm input[type="email"], .mailingListForm input[type="text"], .mailingListForm button {
 		font-size: 12px;
