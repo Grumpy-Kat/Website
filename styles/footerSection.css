@@ -37,37 +37,33 @@
 	box-shadow: var(--shadowInput);
 	padding: 0px;
 }
-.mailingListForm input, .mailingListForm button {
-	font: var(--textPrimary);
-	height: 58px;
-	line-height: 16px;
-	outline: none;
-	background: transparent;
-	border-style: solid;
-	border-radius: 0px;
-}
 .mailingListForm input[type=text] {
 	-webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+	font: var(--textPrimary);
+	height: 58px;
+	line-height: 16px;
+	outline: none;
 	padding: 21px 25px;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
-	border-width: 1px;
-	border-color: rgba(219, 220, 222, 0.3);
+	border: 1px solid rgba(219, 220, 222, 0.3);
 }
 .mailingListForm input::placeholder {
 	color: var(--secondaryTextColor);
 	opacity: 0.4;
 }
 .mailingListForm button {
+	font: var(--textPrimary);
+	height: 58px;
+	line-height: 16px;
 	padding: 0px;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 	border-top-left-radius: 0px;
 	border-bottom-left-radius: 0px;
-	border-width: 0px;
-	background-color: var(--accentColor);
+	border: 0px solid var(--accentColor);
 }
 .mailingListForm input:focus {
 	padding: 21px 25px 22px 24.5px;
