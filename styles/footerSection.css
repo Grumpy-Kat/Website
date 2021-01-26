@@ -46,6 +46,8 @@
 	line-height: 16px;
 	outline: none;
 	padding: 21px 25px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
 	border: 1px solid rgba(219, 220, 222, 0.3);
@@ -175,22 +177,25 @@
 	padding: 8px;
 }
 @media (max-width: 675px) {
-	.mailingListForm input, .mailingListForm button {
+	.mailingListForm input[type="email"], .mailingListForm input[type="text"], .mailingListForm button {
 		font: var(--primaryText);
 		font-weight: 500;
 	}
 }
 @media (max-width: 450px) {
-	.mailingListForm input, .mailingListForm button {
+	.mailingListForm input[type="email"], .mailingListForm input[type="text"], .mailingListForm button {
 		font-size: 12px;
 		font-weight: 500;
 		height: 37px;
 	}
-	.mailingListForm input, .mailingListForm .shine {
+	.mailingListForm input[type="email"], .mailingListForm input[type="text"] {
 		padding: 12px 10px;
 	}
-	.mailingListForm input:focus {
+	.mailingListForm input[type="email"]:focus, .mailingListForm input[type="text"]:focus {
 		padding: 11px 10px 11px 9px;
+	}
+	.mailingListForm .shine {
+		padding: 12px 10px;
 	}
 	.footerButtons .btn {
 		height: 37px;
@@ -210,16 +215,19 @@
 	.mailingListForm {
 		margin: 30px 10px;
 	}
-	.mailingListForm input, .mailingListForm button {
+	.mailingListForm input[type="email"], .mailingListForm input[type="text"], .mailingListForm button {
 		font: var(--textQuaternary);
 		font-weight: 500;
 		height: 31px;
 	}
-	.mailingListForm input, .mailingListForm .shine  {
+	.mailingListForm input[type="email"], .mailingListForm input[type="text"]{
 		padding: 10px 7px;
 	}
-	.mailingListForm input:focus {
+	.mailingListForm input[type="email"]:focus, .mailingListForm input[type="text"]:focus {
 		padding: 9px 7px 9px 6px;
+	}
+	.mailingListForm .shine  {
+		padding: 10px 7px;
 	}
 	.footerButtons .btn {
 		height: 31px;
