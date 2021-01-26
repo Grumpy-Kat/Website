@@ -199,12 +199,22 @@
 		font-size: 12px;
 		font-weight: 500;
 		height: 37px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		border-top-left-radius: 6px;
+		border-bottom-left-radius: 6px;
 	}
 	.mailingListForm input[type="email"], .mailingListForm input[type="text"] {
 		padding: 12px 10px;
 	}
 	.mailingListForm input[type="email"]:focus, .mailingListForm input[type="text"]:focus {
 		padding: 11px 10px 11px 9px;
+	}
+	.mailingListForm button {
+		border-top-right-radius: 6px;
+		border-bottom-right-radius: 6px;
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
 	}
 	.mailingListForm .shine {
 		padding: 11px 10px;
