@@ -169,7 +169,7 @@
 .footerSection .legalLinks a {
 	color: var(--tertiaryTextColor);
 	font: var(--textTertiary);
-	padding: 5px;
+	padding: 8px;
 }
 @media (max-width: 675px) {
 	.mailingListForm input, .mailingListForm button {
