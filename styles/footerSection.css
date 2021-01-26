@@ -167,8 +167,8 @@
 	margin-bottom: 35px;
 }
 .footerSection .legalLinks a {
-	color: var(--secondaryTextColor);
-	font: var(--textSecondary);
+	color: var(--tertiaryTextColor);
+	font: var(--textTertiary);
 	padding: 5px;
 }
 @media (max-width: 675px) {
@@ -247,8 +247,8 @@
 		padding: 0px 115px;
 	}
 	.footerSection .legalLinks a {
-		color: var(--tertiaryTextColor);
-		font: var(--textTertiary);
+		color: var(--secondaryTextColor);
+		font: var(--textSecondary);
 	}
 }
 @media (min-width: 900px) {
