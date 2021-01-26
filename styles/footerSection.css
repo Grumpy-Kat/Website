@@ -52,6 +52,12 @@
 	border-bottom-left-radius: 10px;
 	border: 1px solid rgba(219, 220, 222, 0.3);
 }
+.mailingListForm input[type="email"]:focus, .mailingListForm input[type="text"]:focus {
+	padding: 21px 25px 22px 24.5px;
+	border-width: 1.5px;
+	border-right-width: 0px;
+	border-color: var(--accentColor);
+}
 .mailingListForm input::placeholder {
 	color: var(--secondaryTextColor);
 	opacity: 0.4;
@@ -67,12 +73,6 @@
 	border-bottom-left-radius: 0px;
 	border: 0px solid var(--accentColor);
 	background-color: var(--accentColor);
-}
-.mailingListForm input:focus {
-	padding: 21px 25px 22px 24.5px;
-	border-width: 1.5px;
-	border-right-width: 0px;
-	border-color: var(--accentColor);
 }
 .mailingListForm .shine {
 	padding: 21px;
@@ -181,6 +181,15 @@
 		font: var(--primaryText);
 		font-weight: 500;
 	}
+	.mailingListForm input[type="email"], .mailingListForm input[type="text"] {
+		padding: 21px 25px;
+	}
+	.mailingListForm input[type="email"]:focus, .mailingListForm input[type="text"]:focus {
+		padding: 21px 25px 22px 24.5px;
+	}
+	.mailingListForm .shine {
+		padding: 20px 21px;
+	}
 }
 @media (max-width: 450px) {
 	.mailingListForm input[type="email"], .mailingListForm input[type="text"], .mailingListForm button {
@@ -195,7 +204,7 @@
 		padding: 11px 10px 11px 9px;
 	}
 	.mailingListForm .shine {
-		padding: 12px 10px;
+		padding: 11px 10px;
 	}
 	.footerButtons .btn {
 		height: 37px;
