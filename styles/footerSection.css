@@ -38,9 +38,6 @@
 	padding: 0px;
 }
 .mailingListForm input[type=text] {
-	-webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
 	font: var(--textPrimary);
 	height: 58px;
 	line-height: 16px;
