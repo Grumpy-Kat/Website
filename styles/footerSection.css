@@ -41,9 +41,15 @@
 	font: var(--textPrimary);
 	height: 58px;
 	line-height: 16px;
+	outline: none;
+	background: transparent;
 	border-style: solid;
+	border-radius: 0px;
 }
-.mailingListForm input {
+.mailingListForm input[type=text] {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 	padding: 21px 25px;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
