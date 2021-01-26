@@ -162,6 +162,12 @@
 	width: 167px;
 	height: 50px;
 }
+.footerSection .legalLinks {
+	text-align: center;
+	color: var(--tertiaryTextColor);
+	font: var(--textTertiary);
+	margin-bottom: 30px;
+}
 @media (max-width: 675px) {
 	.mailingListForm input, .mailingListForm button {
 		font: var(--primaryText);
@@ -216,6 +222,9 @@
 	.footerButtons .shine {
 		width: 104px;
 		height: 31px;
+	}
+	.footerSection .legalLinks {
+		font: var(--textQuaternary);
 	}
 }
 @media (min-width: 390px) {

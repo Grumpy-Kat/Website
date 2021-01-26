@@ -23,5 +23,9 @@
 			<a class="email" href="#"></a>
 			<a class="instagram" href="#"></a>
 		</div>
+		<div class="container-fluid legalLinks">
+			<a href="tos">Terms of Service</a>
+			<a href="privacy">Privacy Policy</a>
+		</div>
 	</div>
 </div>
