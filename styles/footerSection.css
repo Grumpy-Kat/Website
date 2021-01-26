@@ -192,6 +192,9 @@
 	}
 }
 @media (max-width: 450px) {
+	.mailingListForm {
+		margin: 30px 15px;
+	}
 	.mailingListForm input[type="email"], .mailingListForm input[type="text"], .mailingListForm button {
 		font-size: 12px;
 		font-weight: 500;
@@ -213,11 +216,6 @@
 	.footerButtons .shine {
 		width: 124px;
 		height: 37px;
-	}
-}
-@media (max-width: 340px) {
-	.mailingListForm {
-		margin: 30px 15px;
 	}
 }
 @media (max-width: 300px) {
