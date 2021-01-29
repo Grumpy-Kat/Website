@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<?php include __DIR__ . "/../includes/head.html"; ?>
-		<link rel="stylesheet" href="/styles/legal.css">
+		<?php include "includes/head.html"; ?>
+		<link rel="stylesheet" href="styles/legal.css">
 	</head>
 	<body>
-		<?php include __DIR__ . "/../includes/navbar.php" ?>
+		<?php include "includes/navbar.php" ?>
 		<div>
 			<ol class="olLevel0">
 				<h2 class="title">Terms of Service</h2>
@@ -13,8 +13,8 @@
 				
 				<li><p><b><u>Introduction</u></b></p></li>
 					<p>Welcome to <b>TechneGames</b> ("<b>Company</b>", "<b>we</b>", "<b>our</b>", "<b>us</b>".) As you have just clicked our Terms of Service, please pause, grab a cup of coffee and carefully read the following pages. It will take you approximately 20 minutes.</p>
-					<p>These Terms of Service ("<b>Terms</b>", "<b>Terms of Service</b>") govern your use of our web pages located at <a href="/">http://www.technegames.com</a> and our mobile application GlamKit (together or individually "<b>Service</b>") operated by TechneGames.</p>
-					<p>Our Privacy Policy also governs your use of our Service and explains how we collect, safeguard, and disclose information that results from your use of our web pages. Please read it here <a href="privacy">http://www.technegames.com/privacy</a>.</p>
+					<p>These Terms of Service ("<b>Terms</b>", "<b>Terms of Service</b>") govern your use of our web pages located at <a href="index.php">https://technegames.com</a> and our mobile application GlamKit (together or individually "<b>Service</b>") operated by TechneGames.</p>
+					<p>Our Privacy Policy also governs your use of our Service and explains how we collect, safeguard, and disclose information that results from your use of our web pages. Please read it here <a href="privacy.php">https://technegames.com/privacy</a>.</p>
 					<p>Your agreement with us includes these Terms and our Privacy Policy ("<b>Agreements</b>"). You acknowledge that you have read and understood Agreements, and agree to be bound of them.</p>
 					<p>If you do not agree with (or cannot comply with) Agreements, then you may not use the Service, but please let us know by emailing at customerservice@technegames.com so we can try to find a solution. These Terms apply to all visitors, users, and others who wish to access or use Service.</p>
 					<p>Thank you for being responsible.</p>
@@ -94,7 +94,7 @@
 					<p>Service and its original content (excluding Content provided by users), features, and functionality are and will remain the exclusive property of TechneGames and its licensors. Service is protected by copyright, trademark, and other laws of the United States and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of TechneGames.</p>
 
 				<li><p><b><u>Error Reporting and Feedback</u></b></p></li>
-					<p>You may provide us either directly at <a href="contact.php?type=bug">http://www.technegames.com/contact</a> or customerservice@technegames.com, or via third party sites and tools with information and feedback concerning errors, suggestions for improvements, ideas, problems, complaints, and other matters related to our Service ("<b>Feedback</b>"). You acknowledge and agree that: (i) you shall not retain, acquire or assert any intellectual property right or other right, title or interest in or to the Feedback; (ii) Company may have development ideas similar to the Feedback; (iii) Feedback does not contain confidential information or proprietary information from you or any third party; and (iv) Company is not under any obligation of confidentiality with respect to the Feedback. In the event the transfer of the ownership to the Feedback is not possible due to applicable mandatory laws, you grant Company and its affiliates an exclusive, transferable, irrevocable, free-of-charge, sub-licensable, unlimited and perpetual right to use (including copy, modify, create derivative works, publish, distribute and commercialize) Feedback in any manner and for any purpose.</p>
+					<p>You may provide us either directly at <a href="contact.php?type=bug">https://technegames.com/contact</a> or customerservice@technegames.com, or via third party sites and tools with information and feedback concerning errors, suggestions for improvements, ideas, problems, complaints, and other matters related to our Service ("<b>Feedback</b>"). You acknowledge and agree that: (i) you shall not retain, acquire or assert any intellectual property right or other right, title or interest in or to the Feedback; (ii) Company may have development ideas similar to the Feedback; (iii) Feedback does not contain confidential information or proprietary information from you or any third party; and (iv) Company is not under any obligation of confidentiality with respect to the Feedback. In the event the transfer of the ownership to the Feedback is not possible due to applicable mandatory laws, you grant Company and its affiliates an exclusive, transferable, irrevocable, free-of-charge, sub-licensable, unlimited and perpetual right to use (including copy, modify, create derivative works, publish, distribute and commercialize) Feedback in any manner and for any purpose.</p>
 					<p>The third party sites and tools mentioned above include the following:</p>
 					<p><b>Firebase Crashlytics</b></p>
 					<p>Firebase Crashlytics is bug reporting service provided by Google Inc.</p>
@@ -143,9 +143,9 @@
 				<li><p><b><u>Contact Us</u></b></p></li>
 					<p>Please send your feedback, comments, requests for technical support, etc:</p>
 					<p>By email: customerservice@technegames.com.</p>
-					<p>By visiting this page on our website: <a href="contact.php?type=feature">http://www.technegames.com/contact</a>.</p>
+					<p>By visiting this page on our website: <a href="contact?type=feature">https://technegames.com/contact</a>.</p>
 			</ol>
 		</div>
-		<?php include __DIR__ . "/../includes/footer.php" ?>
+		<?php include "includes/footer.php" ?>
 	</body>
 </html>

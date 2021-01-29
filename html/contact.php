@@ -1,106 +1,53 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<?php include __DIR__ . "/../includes/head.html"; ?>
-		<link rel="stylesheet" href="/styles/contact.css">
+		<?php include "includes/head.html"; ?>
+		<link rel="stylesheet" href="styles/contact.css">
 	</head>
 	<body>
 		<?php
-			use PHPMailer\PHPMailer\PHPMailer;
-			use PHPMailer\PHPMailer\Exception;
-			require '/../includes/PHPMailer/src/Exception.php';
-			require '/../includes/PHPMailer/src/PHPMailer.php';
-			require '/../includes/PHPMailer/src/SMTP.php';
-			
 			if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
 				$sourceEmail = "customerservice@technegames.com";
 				$emailSubject = "";
 				$emailBody = "<div>";
-				$emailBodyAlt = "";
 				$name = "";
 				if(isset($_POST["name"])) {
 					$name = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
 					$emailSubject .= $name.":";
 					$emailBody .= "<div><p>Name: ".$name."</p></div>";
-					$emailBodyAlt .= "Name: ".$name." | ";
 				}
 				$email = "";
 				if(isset($_POST["email"])) {
 					$email = str_replace(array("\r", "\n", "%0a", "%0d"), "", $_POST["email"]);
 					$email = filter_var($email, FILTER_VALIDATE_EMAIL);
 					$emailBody .= "<div><p>Email: ".$email."</p></div>";
-					$emailBodyAlt .= "Email: ".$email." | ";
 				}
 				$type = "";
 				if(isset($_POST["type"])) {
 					$type = ucfirst(filter_var($_POST["type"], FILTER_SANITIZE_STRING));
 					$emailSubject .= " ".$type;
 					$emailBody .= "<div><p>Type: ".$type."</p></div>";
-					$emailBodyAlt .= "Type: ".$type." | ";
 				}
 				$message = "";
 				if(isset($_POST["message"])) {
 					$message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
 					$emailBody .= "<div><p>Message: ".$message."</p></div>";
-					$emailBodyAlt .= "Message: ".$message;
 				}
 				$emailBody .= "</div>";
-				
-				try {
-					//settings
-					$mail1 = new PHPMailer();
-					$mail1->isSMTP();
-					$mail1->CharSet = 'UTF-8';
-					$mail1->Host = "smtp.gmail.com";
-					$mail1->Port = 587;
-					$mail1->SMTPDebug = 0;
-					$mail1->SMTPAuth = true;
-					$mail1->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-					$mail1->Username = $sourceEmail;
-					$mail1->Password = "arielacat1";
-					//Content
-					$mail1->setFrom($email, $name);
-					$mail1->addAddress($sourceEmail, "Customer Service at TechneGames");
-					$mail1->isHTML(true);
-					$mail1->Subject = $emailSubject;
-					$mail1->Body = $emailBody;
-					$mail1->AltBody = $emailBodyAlt;
-					if(!$mail1->send()) {
-						echo $mail1->ErrorInfo;
-					}
-					
-					//send confirmation
+				$recipient = $sourceEmail;
+				$headers = "MIME-Version: 1.0\r\nContent-type: text/html; charset=utf-8\r\nFrom: ".$email."\r\n";
+				if(mail($recipient, $emailSubject, $emailBody, $headers)) {
+					$recipient = $email;
 					$emailSubject = "Your email was recieved.";
-					$emailBody = "<div><p>Thank you for contacting us about GlamKit, ".$name.". You will get a reply as soon as possible.</p></div>";
-					$emailBodyAlt = "Thank you for contacting us about GlamKit, ".$name.". You will get a reply as soon as possible.";
-					
-					//settings
-					$mail2 = new PHPMailer();
-					$mail2->isSMTP();
-					$mail2->CharSet = 'UTF-8';
-					$mail2->Host = "smtp.gmail.com";
-					$mail2->Port = 587;
-					$mail2->SMTPDebug = 0;
-					$mail2->SMTPAuth = true;
-					$mail2->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-					$mail2->Username = $sourceEmail;
-					$mail2->Password = "arielacat1";
-					//Content
-					$mail2->setFrom($sourceEmail, "Customer Service at TechneGames");
-					$mail2->addAddress($email, $name);
-					$mail2->isHTML(true);
-					$mail2->Subject = $emailSubject;
-					$mail2->Body = $emailBody;
-					$mail2->AltBody = $emailBodyAlt;
-					if(!$mail2->send()) {
-						echo $mail2->ErrorInfo;
-					}
-				} catch(Exception $e) {
-					$error = "There was an error. Your message must likely did not go through. $e";
+					$emailBody = "<div><p>Thank you for contacting us, ".$name.". You will get a reply as soon as possible.</p></div>";
+					$headers = "MIME-Version: 1.0\r\nContent-type: text/html; charset=utf-8\r\nFrom: ".$sourceEmail."\r\n";
+					mail($recipient, $emailSubject, $emailBody, $headers);
+				} else {
+					$error = "There was an error. Your email must likely did not go through.";
 				}
 			}
 		?>
-		<?php include __DIR__ . "/../includes/navbar.php"; ?>
+		<?php include "includes/navbar.php"; ?>
 		<!--main contact form-->
 		<form class="container-fluid contactForm" method="POST" action="<?php $_SERVER['PHP_SELF']; ?>">
 			<h2>Contact</h2>
@@ -163,6 +110,6 @@
 				}
 			);
 		</script>
-		<?php include __DIR__ . "/../includes/footer.php" ?>
+		<?php include "includes/footer.php" ?>
 	</body>
 </html>

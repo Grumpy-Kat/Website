@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<?php include __DIR__ . "/../includes/head.html"; ?>
-		<link rel="stylesheet" href="/styles/headerSection.css">
-		<link rel="stylesheet" href="/styles/screenSections.css">
+		<?php include "includes/head.html"; ?>
+		<link rel="stylesheet" href="styles/headerSection.css">
+		<link rel="stylesheet" href="styles/screenSections.css">
 	</head>
 	<body>
-		<?php include __DIR__ . "/../includes/navbar.php" ?>
+		<?php include "includes/navbar.php" ?>
 		<!--first section-->
 		<div class="container-fluid row headerSection">
 			<div class="col-md-6">
@@ -91,7 +91,7 @@
 							}
 							let playbackMultiplier = video.duration / (maxHeight * heightMultiplier);
 							videoTop -= maxHeight * ((1 - heightMultiplier) / 2);
-							return lerp(video.frame / playbackMultiplier, maxHeight * heightMultiplier, (videoTop + screenHeight)) * playbackMultiplier;
+							return lerp(maxHeight * ((1 - heightMultiplier) / 2), maxHeight * heightMultiplier, (videoTop + screenHeight)) * playbackMultiplier;
 						}
 						
 						function lerp(a, b, f) {
@@ -211,6 +211,6 @@
 				}
 			);
 		</script>
-		<?php include __DIR__ . "/../includes/footer.php" ?>
+		<?php include "includes/footer.php" ?>
 	</body>
 </html>
