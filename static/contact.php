@@ -8,9 +8,9 @@
 		<?php
 			use PHPMailer\PHPMailer\PHPMailer;
 			use PHPMailer\PHPMailer\Exception;
-			require '/../includes/PHPMailer/src/Exception.php';
-			require '/../includes/PHPMailer/src/PHPMailer.php';
-			require '/../includes/PHPMailer/src/SMTP.php';
+			require __DIR__ . '/../includes/PHPMailer/src/Exception.php';
+			require __DIR__ . '/../includes/PHPMailer/src/PHPMailer.php';
+			require __DIR__ . '/../includes/PHPMailer/src/SMTP.php';
 			
 			if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
 				$sourceEmail = "customerservice@technegames.com";
@@ -47,6 +47,7 @@
 				$emailBody .= "</div>";
 				
 				try {
+					//get password
 					//settings
 					$mail1 = new PHPMailer();
 					$mail1->isSMTP();
