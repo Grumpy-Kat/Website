@@ -47,7 +47,6 @@
 				$emailBody .= "</div>";
 				
 				try {
-					//get password
 					//settings
 					$mail1 = new PHPMailer();
 					$mail1->isSMTP();
@@ -58,7 +57,7 @@
 					$mail1->SMTPAuth = true;
 					$mail1->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 					$mail1->Username = $sourceEmail;
-					$mail1->Password = "arielacat1";
+					$mail1->Password = getenv('emailPassword');
 					//Content
 					$mail1->setFrom($email, $name);
 					$mail1->addAddress($sourceEmail, "Customer Service at TechneGames");
@@ -85,7 +84,7 @@
 					$mail2->SMTPAuth = true;
 					$mail2->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 					$mail2->Username = $sourceEmail;
-					$mail2->Password = "arielacat1";
+					$mail2->Password = getenv('emailPassword');
 					//Content
 					$mail2->setFrom($sourceEmail, "Customer Service at TechneGames");
 					$mail2->addAddress($email, $name);
