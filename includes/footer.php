@@ -5,7 +5,7 @@
 			<h3>Stay up-to-date with updates via email.</h3>
 		</div>
 		<?php
-			if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["mailingList"])) {
+			if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["subscribe"]) && isset($_POST["mailingList"])) {
 				$postData = array(
 					"email_address" => $_POST["mailingList"],
 					"status" => "subscribed",
@@ -15,10 +15,10 @@
 				curl_setopt_array(
 					$request,
 					array(
-						CURLOPT_USERPWD => getenv("mailchimpKey")
+						CURLOPT_USERPWD => getenv("mailchimpKey"),
 						CURLOPT_HTTPHEADER => ["Content-Type: application/json"],
 						CURLOPT_RETURNTRANSFER => true,
-						CURLOPT_CUSTOMREQUEST => "PUT",
+						CURLOPT_POST => true,
 						CURLOPT_SSL_VERIFYPEER => false,
 						CURLOPT_POSTFIELDS => json_encode($postData)
 					)
