@@ -7,30 +7,25 @@
 		<?php
 			if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["subscribe"]) && isset($_POST["mailingList"])) {
 				try {
-					$postData = json_encode([
+					$auth = base64_encode('user:'.getenv("mailchimpKey"));
+					$data = json_encode([
 						"email_address" => $_POST["mailingList"],
 						"status" => "subscribed",
 					]);
-					echo $_POST["mailingList"];
-					$request = curl_init('https://us7.api.mailchimp.com/3.0/lists/'.getenv("mailchimpListId").'/members/');
-					curl_setopt_array(
-						$request,
-						[
-							CURLOPT_USERPWD => getenv("mailchimpKey"),
-							CURLOPT_HTTPHEADER => ["Content-Type: application/json"],
-							CURLOPT_RETURNTRANSFER => true,
-							CURLOPT_POST => true,
-							CURLOPT_SSL_VERIFYPEER => false,
-							CURLOPT_POSTFIELDS => $postData
-						]
-					);
-					echo getenv("mailchimpListId");
-					echo getenv("mailchimpKey");
-					$response = curl_exec($request);
-					$httpCode = curl_getinfo($request, CURLINFO_HTTP_CODE);
+					$ch = curl_init();
+					curl_setopt($ch, CURLOPT_URL, 'https://us7.api.mailchimp.com/3.0/lists/'.getenv("mailchimpListId").'/members/');
+					curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json', 'Authorization: Basic '.$auth));
+					curl_setopt($ch, CURLOPT_USERAGENT, 'PHP-MCAPI/2.0');
+					curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+					curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+					curl_setopt($ch, CURLOPT_POST, true);
+					curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+					curl_setopt($ch, CURLOPT_POSTFIELDS, $data);                                                                                                                  
+					$response = curl_exec($ch);
 					echo "<p>response recieved</p>";
+					$httpCode = curl_getinfo($request, CURLINFO_HTTP_CODE);
 					echo $httpCode;
-					curl_close($request);
+					curl_close($ch);
 				} catch(Exception $e) {
 					echo $e->getMessage();
 				}
