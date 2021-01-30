@@ -43,9 +43,9 @@
 			</button>
 		</div>
 		<div class="continer-fluid socialMedia">
-			<a class="twitter" href="#"></a>
-			<a class="email" href="#"></a>
-			<a class="instagram" href="#"></a>
+			<a class="email" href="mailto:customerservice@technegames.com"></a>
+			<a class="twitter" href="https://twitter.com/Techne_Games"></a>
+			<a class="instagram" href="https://www.instagram.com/technegames/"></a>
 		</div>
 		<div class="container-fluid legalLinks">
 			<a href="tos">Terms of Service</a>
