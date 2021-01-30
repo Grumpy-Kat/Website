@@ -9,22 +9,24 @@
 				$postData = array(
 					"email_address" => $_POST["mailingList"],
 					"status" => "subscribed",
+					"merge_fields" => [],
 				);
-				$request = curl_init('https://us7.api.mailchimp.com/3.0/lists/'.env("mailchimpListId").'/members/');
+				$request = curl_init('https://us7.api.mailchimp.com/3.0/lists/'.getenv("mailchimpListId").'/members/');
 				curl_setopt_array(
 					$request,
 					array(
-						CURLOPT_POST => TRUE,
-						CURLOPT_RETURNTRANSFER => TRUE,
-						CURLOPT_HTTPHEADER => array(
-							'Authorization: apikey '.getenv("mailchimpKey"),
-							'Content-Type: application/json'
-						),
+						CURLOPT_USERPWD => getenv("mailchimpKey")
+						CURLOPT_HTTPHEADER => ["Content-Type: application/json"],
+						CURLOPT_RETURNTRANSFER => true,
+						CURLOPT_CUSTOMREQUEST => "PUT",
+						CURLOPT_SSL_VERIFYPEER => false,
 						CURLOPT_POSTFIELDS => json_encode($postData)
 					)
 				);
 				$response = curl_exec($request);
-				echo $response;
+				$httpCode = curl_getinfo($request, CURLINFO_HTTP_CODE);
+				curl_close($request);
+				echo "response recieved";
 			}
 		?>
 		<form class="container-fluid row mailingListForm" method="POST" action="<?php $_SERVER['PHP_SELF']; ?>">
