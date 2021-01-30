@@ -5,7 +5,7 @@
 			<h3>Stay up-to-date with updates via email.</h3>
 		</div>
 		<?php
-			if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["subscribe"]) && isset($_POST["mailingList"])) {
+			if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["mailingList"])) {
 				$postData = array(
 					"email_address" => $_POST["mailingList"],
 					"status" => "subscribed",
