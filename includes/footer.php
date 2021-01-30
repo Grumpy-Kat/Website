@@ -22,9 +22,6 @@
 					curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 					curl_setopt($ch, CURLOPT_POSTFIELDS, $data);                                                                                                                  
 					$response = curl_exec($ch);
-					echo "<p>response recieved</p>";
-					$httpCode = curl_getinfo($request, CURLINFO_HTTP_CODE);
-					echo $httpCode;
 					curl_close($ch);
 				} catch(Exception $e) {
 					echo $e->getMessage();
