@@ -25,8 +25,10 @@
 				);
 				$response = curl_exec($request);
 				$httpCode = curl_getinfo($request, CURLINFO_HTTP_CODE);
-				curl_close($request);
 				echo "response recieved";
+				echo $reponse;
+				echo $httpCode;
+				curl_close($request);
 			}
 		?>
 		<form class="container-fluid row mailingListForm" method="POST" action="<?php $_SERVER['PHP_SELF']; ?>">
