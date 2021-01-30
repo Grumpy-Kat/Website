@@ -6,29 +6,34 @@
 		</div>
 		<?php
 			if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["subscribe"]) && isset($_POST["mailingList"])) {
-				$postData = array(
-					"email_address" => $_POST["mailingList"],
-					"status" => "subscribed",
-					"merge_fields" => [],
-				);
-				$request = curl_init('https://us7.api.mailchimp.com/3.0/lists/'.getenv("mailchimpListId").'/members/');
-				curl_setopt_array(
-					$request,
-					array(
-						CURLOPT_USERPWD => getenv("mailchimpKey"),
-						CURLOPT_HTTPHEADER => ["Content-Type: application/json"],
-						CURLOPT_RETURNTRANSFER => true,
-						CURLOPT_POST => true,
-						CURLOPT_SSL_VERIFYPEER => false,
-						CURLOPT_POSTFIELDS => json_encode($postData)
-					)
-				);
-				$response = curl_exec($request);
-				$httpCode = curl_getinfo($request, CURLINFO_HTTP_CODE);
-				echo "response recieved";
-				echo $reponse;
-				echo $httpCode;
-				curl_close($request);
+				try {
+					$postData = json_encode([
+						"email_address" => $_POST["mailingList"],
+						"status" => "subscribed",
+					]);
+					echo $_POST["mailingList"];
+					$request = curl_init('https://us7.api.mailchimp.com/3.0/lists/'.getenv("mailchimpListId").'/members/');
+					curl_setopt_array(
+						$request,
+						[
+							CURLOPT_USERPWD => getenv("mailchimpKey"),
+							CURLOPT_HTTPHEADER => ["Content-Type: application/json"],
+							CURLOPT_RETURNTRANSFER => true,
+							CURLOPT_POST => true,
+							CURLOPT_SSL_VERIFYPEER => false,
+							CURLOPT_POSTFIELDS => $postData
+						]
+					);
+					echo getenv("mailchimpListId");
+					echo getenv("mailchimpKey");
+					$response = curl_exec($request);
+					$httpCode = curl_getinfo($request, CURLINFO_HTTP_CODE);
+					echo "<p>response recieved</p>";
+					echo $httpCode;
+					curl_close($request);
+				} catch(Exception $e) {
+					echo $e->getMessage();
+				}
 			}
 		?>
 		<form class="container-fluid row mailingListForm" method="POST" action="<?php $_SERVER['PHP_SELF']; ?>">
