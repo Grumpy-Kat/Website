@@ -16,7 +16,7 @@
 			<p>Price: Free</p>
 			<p>Website: <a href="/">www.technegames.com</a></p>
 			<p>Instagram: <a href="https://www.instagram.com/technegames/">TechneGames</a></p>
-			<p>Twitter: <a href="https://twitter.com/Techne_Games">TechneGames</a></p>
+			<p>Twitter: <a href="https://twitter.com/Techne_Games">Techne_Games</a></p>
 			<p>Contact: <a href="contact.php?type=press">www.technegames.com/contact</a></p>
 			<p>FAQs: <a href="faqs">www.technegames.com/faqs</a></p>
 		</div>
