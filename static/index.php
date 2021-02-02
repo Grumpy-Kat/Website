@@ -58,7 +58,7 @@
 						var orgVideoTop;
 						
 						window.onscroll = function() {
-							console.log('scrolling')l
+							console.log('scrolling');
 							let heightMultiplier = 0.87;
 							let screenHeight = window.screen.height;
 							let videoTop = video.getBoundingClientRect().top;
