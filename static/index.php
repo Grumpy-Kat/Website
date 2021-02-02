@@ -51,30 +51,13 @@
 			<div class="col-md-4 col-md-pull-8 phone">
 				<div>
 					<video id="scrollingVideo" tabindex="0" autobuffer preload>
-						<source src="imgs/screenshots/dark AllSwatches video.mp4" type="video/mp4" />
+						<source src="/imgs/screenshots/dark AllSwatches video.mp4" type="video/mp4" />
 					</video>
 					<script>
 						var video = $("#scrollingVideo")[0];
 						var orgVideoTop;
 						
-						video.addEventListener(
-							'loadedmetadata',
-							function() {
-								orgVideoTop = $(video).offset().top;
-							}
-						);
-						
-						function scrollPlay() {
-							let frame = getFrame();
-							if(isNaN(frame)) {
-								console.log(frame);
-								frame = 0;
-							}
-							video.currentTime = frame;
-							window.requestAnimationFrame(scrollPlay);
-						}
-						
-						function getFrame() {
+						window.onscroll = function() {
 							let heightMultiplier = 0.87;
 							let screenHeight = window.screen.height;
 							let videoTop = video.getBoundingClientRect().top;
@@ -84,23 +67,42 @@
 							if(videoTop < -screenHeight * 0.5) {
 								return video.duration;
 							}
+							
 							let maxHeight = screenHeight * 2;
 							if(orgVideoTop < screenHeight) {
 								//video starts on screen already, needs to be accounted for
 								maxHeight = screenHeight + orgVideoTop;
 							}
+							
 							let playbackMultiplier = video.duration / (maxHeight * heightMultiplier);
 							videoTop -= maxHeight * ((1 - heightMultiplier) / 2);
-							return lerp(video.frame / playbackMultiplier, maxHeight * heightMultiplier, (videoTop + screenHeight)) * playbackMultiplier;
+							
+							let start = maxHeight * ((1 - heightMultiplier) / 2);
+							let end = maxHeight * heightMultiplier;
+							let newFrame = inverseLerp(start, end, (videoTop + screenHeight)) * playbackMultiplier;
+							if(isNaN(newFrame)) {
+								newFrame = 0;
+							}
+							video.currentTime = newFrame;
 						}
 						
 						function lerp(a, b, f) {
+							if(f > 1) {
+								f = 1;
+							}
+							if(f < 0) {
+								f = 0;
+							}
+							return a * (1 - f) + (b * f);
+						}
+						
+						function inverseLerp(a, b, f) {
 							return (b - f + a) / (b - a) * b;
 						}
 						
 						$(document).ready(
 							function() {
-								window.requestAnimationFrame(scrollPlay);
+								orgVideoTop = $(video).offset().top;
 							}
 						);
 					</script>
