@@ -58,6 +58,7 @@
 						var orgVideoTop;
 						
 						window.onscroll = function() {
+							console.log('scrolling')l
 							let heightMultiplier = 0.87;
 							let screenHeight = window.screen.height;
 							let videoTop = video.getBoundingClientRect().top;
@@ -83,6 +84,7 @@
 							if(isNaN(newFrame)) {
 								newFrame = 0;
 							}
+							console.log(newFrame);
 							video.currentTime = newFrame;
 						}
 						
