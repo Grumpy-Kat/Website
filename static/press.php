@@ -12,7 +12,7 @@
 			<h3>Facts</h3>
 			<p>Developer: TechneGames</p>
 			<p>Release Date: Winter 2021</p>
-			<p>Platforms: <a href="#">iOS App Store</a> and <a href="#">Google Play Store</a></p>
+			<p>Platforms: <a href="#">iOS App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.glamkit">Google Play Store</a></p>
 			<p>Price: Free</p>
 			<p>Website: <a href="/">www.technegames.com</a></p>
 			<p>Instagram: <a href="https://www.instagram.com/technegames/">TechneGames</a></p>

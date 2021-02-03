@@ -18,7 +18,7 @@
 					<button type="button" class="col-xs-6 btn btn-dark shineBtn iOS">
 						<div class="shine"></div>
 					</button>
-					<button type="button" class="col-xs-6 btn btn-dark shineBtn android">
+					<button type="button" class="col-xs-6 btn btn-dark shineBtn android" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.glamkit';">
 						<span class="shine"></span>
 					</button>
 				</div>
