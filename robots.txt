@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /includes/
+Disallow: /fonts/
+Allow: /static/
+Allow: /index.php
+
+Sitemap: http://www.technegames.com/sitemap.xml

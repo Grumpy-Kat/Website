@@ -1,2 +1,2 @@
 # Website
-The website for technegames.com. Currently, its for the GlamKit app.
+The website for http//www.technegames.com. Currently, its for the GlamKit app.
