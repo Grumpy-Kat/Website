@@ -35,7 +35,7 @@
 			</button>
 		</form>
 		<div class="container row buttons footerButtons">
-			<button type="button" class="col-xs-6 btn btn-dark shineBtn iOS">
+			<button type="button" class="col-xs-6 btn btn-dark shineBtn iOS" onclick="window.location.href='https://apple.co/3jxU4N7';">
 				<div class="shine"></div>
 			</button>
 			<button type="button" class="col-xs-6 btn btn-dark shineBtn android" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.glamkit';">

@@ -12,7 +12,7 @@
 			<h3>Facts</h3>
 			<p>Developer: TechneGames</p>
 			<p>Release Date: Winter 2021</p>
-			<p>Platforms: <a href="#">iOS App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.glamkit">Google Play Store</a></p>
+			<p>Platforms: <a href="https://apple.co/3jxU4N7">iOS App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.glamkit">Google Play Store</a></p>
 			<p>Price: Free</p>
 			<p>Website: <a href="/">www.technegames.com</a></p>
 			<p>Instagram: <a href="https://www.instagram.com/technegames/">TechneGames</a></p>
@@ -58,7 +58,7 @@
 		<!--team description section-->
 		<div class="container-fluid pressSection teamSection">
 			<h3>Team</h3>
-			<p>GlamKit is made by Ariela Litvin, a solo 17-year-old developer. I have been self-taught since I started programming at 10 years old. Development of the app started in 2019 when my interest in makeup began to grow. This also meant that my collection began to expand. I realized that I kept using the same few palettes for every look and allowing dust to gather on a large part of my collection. I also kept buying the same shades and then complaining I don't own that shade. So I decided to make an app that would make it easier for me to find the right colors and create looks that fully utilize my collection.</p>
+			<p>GlamKit is made by Ariela Litvin, a solo 17-year-old developer. I have been self-taught since I started programming at 10 years old. Development of the app started when my interest in makeup began to grow. This also meant that my collection began to expand. I realized that I kept using the same few palettes for every look and allowing dust to gather on a large part of my collection. I also kept buying the same shades and then complaining I don't own that shade. So I decided to make an app that would make it easier for me to find the right colors and create looks that fully utilize my collection.</p>
 		</div>
 		<!--screenshots images section-->
 		<div class="container-fluid pressSection imgsSection">
