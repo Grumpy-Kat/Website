@@ -100,7 +100,7 @@
 					}
 					echo 'here 4';
 				} catch(Exception $e) {
-					echo $e
+					echo $e;
 					$error = "There was an error. Your message must likely did not go through. $e";
 				}
 			}
