@@ -65,11 +65,11 @@
 					$mail1->Subject = $emailSubject;
 					$mail1->Body = $emailBody;
 					$mail1->AltBody = $emailBodyAlt;
-					echo 'here 1'
+					echo 'here 1';
 					if(!$mail1->send()) {
 						echo $mail1->ErrorInfo;
 					}
-					echo 'here 2'
+					echo 'here 2';
 					
 					//send confirmation
 					$emailSubject = "Your email was recieved.";
@@ -82,7 +82,7 @@
 					$mail2->CharSet = 'UTF-8';
 					$mail2->Host = "smtp.gmail.com";
 					$mail2->Port = 587;
-					$mail2->SMTPDebug = 3s;
+					$mail2->SMTPDebug = 3;
 					$mail2->SMTPAuth = true;
 					$mail2->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 					$mail2->Username = $sourceEmail;
@@ -94,11 +94,11 @@
 					$mail2->Subject = $emailSubject;
 					$mail2->Body = $emailBody;
 					$mail2->AltBody = $emailBodyAlt;
-					echo 'here 3'
+					echo 'here 3';
 					if(!$mail2->send()) {
 						echo $mail2->ErrorInfo;
 					}
-					echo 'here 4'
+					echo 'here 4';
 				} catch(Exception $e) {
 					echo $e
 					$error = "There was an error. Your message must likely did not go through. $e";
