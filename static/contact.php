@@ -53,7 +53,7 @@
 					$mail1->CharSet = 'UTF-8';
 					$mail1->Host = "smtp.gmail.com";
 					$mail1->Port = 587;
-					$mail1->SMTPDebug = 0;
+					$mail1->SMTPDebug = SMTP::DEBUG_SERVER;
 					$mail1->SMTPAuth = true;
 					$mail1->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 					$mail1->Username = $sourceEmail;
@@ -80,7 +80,7 @@
 					$mail2->CharSet = 'UTF-8';
 					$mail2->Host = "smtp.gmail.com";
 					$mail2->Port = 587;
-					$mail2->SMTPDebug = 0;
+					$mail2->SMTPDebug = SMTP::DEBUG_SERVER;
 					$mail2->SMTPAuth = true;
 					$mail2->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 					$mail2->Username = $sourceEmail;
